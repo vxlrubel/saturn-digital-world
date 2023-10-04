@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family: var(--saturn-font-family);
+    font-size: var(--saturn-font-size);
+    font-weight: var(--saturn-font-weight);
+    line-height: var(--saturn-line-height);
+    color: var(--saturn-body-color);
+    text-align: var(--saturn-text-align);
+    background-color: var(--saturn-body-bg);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: var(--saturn-color);
+    text-decoration: none;
+}
+
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.container{
+    width: 100%;
+    padding-left: var(--saturn-padding-side);
+    padding-right: var(--saturn-padding-side);
+    margin-left: auto;
+    margin-right: auto;
+    @include media('phone'){
+        max-width: 540px;
+    }
+    @include media('tablet'){
+        max-width: 720px;
+    }
+    @include media('laptop'){
+        max-width: 960px;
+    }
+    @include media('desktop'){
+        max-width: 1140px;
+    }
+    @include media('monitor'){
+        max-width: 1320px;
+    }
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: var(--saturn-margin-side-offset);
+    margin-right: var(--saturn-margin-side-offset);
+}
+[class*="width-"]{
+    position: relative;
+    width: 100%;
+    padding-left: var(--saturn-padding-side);
+    padding-right: var(--saturn-padding-side);
+}

@@ -1,3 +1,15 @@
 :root{
     --saturn-color: #03C0AA;
+    --saturn-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --saturn-font-size: 1rem;
+    --saturn-body-bg: #212529;
+    --saturn-body-color: #fff;
+    --saturn-header-color: #33373B;
+    --saturn-line-height: 1.5;
+    --saturn-font-weight: 400;
+    --saturn-text-align: left;
+    --saturn-padding-side: 15px;
+    --saturn-margin-side-offset: -15px;
+    --saturn-font-samll: 90%;
+    --saturn-box-shadow:  0 0.5rem 1rem rgba(255, 250, 250, 0.1);
 }
