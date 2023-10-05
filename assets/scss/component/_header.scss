@@ -170,20 +170,24 @@
                 &::after{
                     position: absolute;
                     content: '';
-                    height: 2px;
-                    width: 11px;
                     background-color: white;
-                    top: calc(50% - 1px);
-                    left: calc(50% - 5px);
                     z-index: 1;
                     transition: 0.15s ease-in-out;
                 }
+                &::after{
+                    height: 2px;
+                    width: 10px;
+                    top: calc(50% - 1px);
+                    left: calc(50% - 5px);
+                }
                 &::before{
-                    left: calc( 50% - 4px);
-                    transform: rotate(90deg);
+                    height: 10px;
+                    width: 2px;
+                    top: calc(50% - 5px);
+                    left: calc(50% - 1px);
                 }
                 &.show::before{
-                    transform: rotate(0deg);
+                    transform: rotate(90deg);
                 }
             }
         }
