@@ -22,8 +22,14 @@ img{
 a{
     color: var(--saturn-color);
     text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
-
+a,
+input,
+button{
+    line-height: inherit;
+    border-radius: 4px !important;
+}
 .clearfix::after{
     display: block;
     clear: both;
@@ -31,10 +37,10 @@ a{
 }
 .container{
     width: 100%;
-    padding-left: var(--saturn-padding-side);
     padding-right: var(--saturn-padding-side);
-    margin-left: auto;
+    padding-left: var(--saturn-padding-side);
     margin-right: auto;
+    margin-left: auto;
     @include media('phone'){
         max-width: 540px;
     }
@@ -52,11 +58,12 @@ a{
     }
 }
 .wrap{
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 100%;
-    margin-left: var(--saturn-margin-side-offset);
     margin-right: var(--saturn-margin-side-offset);
+    margin-left: var(--saturn-margin-side-offset);
 }
 [class*="width-"]{
     position: relative;
