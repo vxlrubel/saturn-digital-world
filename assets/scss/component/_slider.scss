@@ -1,0 +1,15 @@
+.saturn-slider{
+  position: relative;
+  .slide{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    img{
+      width: 100%;
+    }
+  }
+}
