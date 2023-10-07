@@ -30,6 +30,75 @@ button{
     line-height: inherit;
     border-radius: 4px !important;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+.d-none{
+    display: none !important;
+}
+.d-inline-block{
+    display: inline-block !important;
+}
+.d-block{
+    display: block !important;
+}
+.d-inline-flex{
+    display: inline-flex !important;
+}
+.d-flex{
+    display: flex !important;
+}
+@include media('phone'){
+    .d-sm-none{
+        display: none !important;
+    }
+    .d-sm-inline-block{
+        display: inline-block !important;
+    }
+    .d-sm-block{
+        display: block !important;
+    }
+    .d-sm-inline-flex{
+        display: inline-flex !important;
+    }
+    .d-sm-flex{
+        display: flex !important;
+    }
+}
+@include media('tablet'){
+    .d-md-none{
+        display: none !important;
+    }
+    .d-md-inline-block{
+        display: inline-block !important;
+    }
+    .d-md-block{
+        display: block !important;
+    }
+    .d-md-inline-flex{
+        display: inline-flex !important;
+    }
+    .d-md-flex{
+        display: flex !important;
+    }
+}
+@include media('laptop'){
+    .d-lg-none{
+        display: none !important;
+    }
+    .d-lg-inline-block{
+        display: inline-block !important;
+    }
+    .d-lg-block{
+        display: block !important;
+    }
+    .d-lg-inline-flex{
+        display: inline-flex !important;
+    }
+    .d-lg-flex{
+        display: flex !important;
+    }
+}
 .clearfix::after{
     display: block;
     clear: both;
