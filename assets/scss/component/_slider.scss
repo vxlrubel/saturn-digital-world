@@ -1,15 +1,52 @@
-.saturn-slider{
+.home-slider{
   position: relative;
-  .slide{
+  .saturn-slider-dots{
     position: absolute;
     display: flex;
-    top: 0;
+    justify-content: flex-end;
+    padding: 15px;
+    bottom: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 9999;
-    img{
-      width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    .slider-dot{
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      outline: 0;
+      border: none;
+      cursor: pointer;
+      background-color: var(--saturn-color);
+      opacity: 0.5;
+      &:not(:last-child){
+        margin-right: 5px;
+      }
+      &.active{
+        opacity: 1;
+      }
+    }
+  }
+  .slide-info{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 70%;
+    padding: 0 15px;
+    @include media('phone'){
+      bottom: 50px;
+      padding-left: 30px;
+    }
+    @include media('tablet'){
+      bottom: 70px;
+      padding-left: 50px;
+    }
+    @include media('laptop'){
+      bottom: 150px;
+      padding-left: 70px;
+    }
+    @include media('desktop'){
+      bottom: 150px;
+      padding-left: 100px;
     }
   }
 }

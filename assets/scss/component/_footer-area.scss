@@ -1,6 +1,6 @@
 .footer-area{
+    background-color: var(--saturn-header-color);
     .footer-widget{
-        background-color: #2C3034;
         padding-top: 50px;
         [class*="width-"]{
             width: 100%;
@@ -138,7 +138,7 @@
         }
     }
     .copyright-area{
-        background-color: var(--saturn-header-color);
+        background-color: var(--saturn-copyright-color);
         .wrap{
             align-items: center;
             font-size: 90%;

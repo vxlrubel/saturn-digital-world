@@ -3,6 +3,7 @@
     class SDW {
         init(){
             this.header();
+            this.homeSlider();
         }
 
         header(){
@@ -25,6 +26,27 @@
                 $('.responsive-menu').stop().toggleClass('show');
             });
         
+        }
+
+        homeSlider(){
+            var args = {
+                items             : 1,
+                loop              : true,
+                dots              : true,
+                lazyLoad          : true,
+                autoplay          : true,
+                autoplayTimeout   : 3000,
+                autoplayHoverPause: true,
+                smartSpeed        : 1500,
+                dotsSpeed         : 750,
+                navSpeed          : 750,
+                dotClass          : 'slider-dot',
+                dotsClass         : 'saturn-slider-dots',
+                animateIn         : 'animate__fadeInRight',
+                animateOut        : 'animate__fadeOutLeft',
+                
+            }
+            $(".home-slider").owlCarousel(args);
         }
     }
     $(document).ready(function () {
