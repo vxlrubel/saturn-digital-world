@@ -1,0 +1,57 @@
+.services{
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        @include media('phone'){
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        @include media('tablet'){
+            gap: 30px;
+        }
+        @include media('laptop'){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include media('laptop'){
+            gap: 35px;
+        }
+        .service-item{
+            background-color: var(--saturn-copyright-color);
+            padding: 15px;
+            border-radius: 4px;
+
+            h2{
+                font-size: 18px;
+                margin: 5px 0 10px;
+            }
+            p{
+                margin: 0 0 10px;
+                font-size: var(--saturn-font-samll);
+            }
+            a{
+                position: relative;
+                font-size: var(--saturn-font-samll);
+                &::after{
+                    position: absolute;
+                    display: inline-block;
+                    content: '';
+                    height: 8px;
+                    width: 8px;
+                    border: 2px solid var(--saturn-color);
+                    top: calc( 50% - 2px);
+                    border-left: none;
+                    border-bottom: none;
+                    transform: rotate(45deg);
+                    transition: all 0.3s ease-in-out;
+                    margin-left: 5px;
+                }
+                &:hover::after{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
