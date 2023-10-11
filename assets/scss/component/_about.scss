@@ -1,0 +1,19 @@
+.about-us{
+    // background-color: #AED2FF;
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        @include media('tablet'){
+            grid-template-columns: 1fr 1fr;
+        }
+        .subtitle{
+            font-size: var(--saturn-font-small);
+            margin: 0;;
+            text-transform: uppercase;
+        }
+        .title{
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+}

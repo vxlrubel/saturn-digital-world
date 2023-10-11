@@ -34,6 +34,9 @@ button{
 h1,h2,h3,h4,h5,h6{
     font-weight: 400;
 }
+.w-100{
+    width: 100%;
+}
 .d-none{
     display: none !important;
 }
@@ -150,6 +153,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 5px 20px;
     background-color: var(--saturn-color);
     color: var(--saturn-body-color);
+    font-weight: bold;
 }
 .py-5{
     padding-top: 50px;

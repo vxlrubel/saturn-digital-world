@@ -1,0 +1,16 @@
+.pertners{
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        @include media('phone'){
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @include media('tablet'){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @include media('laptop'){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        img{display: flex;}
+    }
+}

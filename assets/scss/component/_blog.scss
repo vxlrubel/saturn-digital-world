@@ -1,0 +1,55 @@
+.blog-area{
+    .grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        @include media('tablet'){
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media('laptop'){
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        article{
+            background-color: var(--saturn--blog-color);
+            border-radius: 4px;
+            padding: 15px;
+            @include media('phone'){
+                padding: 25px;
+            }
+            @include media('laptop'){
+                padding: 15px;
+            }
+            @include media('desktop'){
+                padding: 30px;
+            }
+        }
+        .post-title{
+            font-size: 17px;
+            font-weight: 600;
+            margin: 0;
+            line-height: 110%;
+        }
+        .post-desc{
+            font-size: var(--saturn-font-samll);
+            line-height: 20px;
+        }
+        .post-permalink{
+            font-size: var(--saturn-font-samll);
+        }
+    }
+
+    &.why-choose-us{
+        .grid{
+            grid-template-columns: 1fr;
+            @include media('tablet'){
+                grid-template-columns: 1fr 1fr;
+            }
+            @include media('laptop'){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .desc{
+                font-size: var(--saturn-font-samll);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
