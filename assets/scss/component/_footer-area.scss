@@ -10,6 +10,7 @@
         width: 35px;
         background-color: var(--saturn-color);
         color: white;
+        opacity: 0.6;
         cursor: pointer;
         &::after{
             position: absolute;
@@ -22,6 +23,9 @@
             z-index: 1030;
             transform: rotate(45deg);
             content: '';
+        }
+        &:hover{
+            opacity: 1;
         }
     }
     .footer-widget{

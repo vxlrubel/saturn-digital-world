@@ -1,6 +1,6 @@
 (function($){
 
-    class SDW {
+    class SaturnDigitalWorld {
         init(){
             this.header();
             this.homeSlider();
@@ -51,16 +51,35 @@
         }
 
         scrollToTop(){
+            
+            let win = $(window);
+
+            win.on('scroll', function(){
+                showHide();
+            });
+            
             $('.scroll-to-top').on('click', (e)=>{
                 e.preventDefault();
                 $('html,body').animate({
                     scrollTop: 0
                 }, 1000);
-            })
+            });
+
+            function showHide(){
+                const top = win.scrollTop();
+                const windowHeight = win.outerHeight();
+                if( top >= windowHeight ){
+                    $('.scroll-to-top').fadeIn();
+                }else{
+                    $('.scroll-to-top').fadeOut();
+                }
+            }
+            showHide();
         }
     }
     $(document).ready(function () {
-        const sdw = new SDW();
+        const sdw = new SaturnDigitalWorld();
         sdw.init();
     });
+    
 })(jQuery);
