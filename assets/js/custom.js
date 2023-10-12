@@ -4,6 +4,7 @@
         init(){
             this.header();
             this.homeSlider();
+            this.scrollToTop();
         }
 
         header(){
@@ -47,6 +48,15 @@
                 
             }
             $(".home-slider").owlCarousel(args);
+        }
+
+        scrollToTop(){
+            $('.scroll-to-top').on('click', (e)=>{
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000);
+            })
         }
     }
     $(document).ready(function () {
