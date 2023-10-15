@@ -5,6 +5,7 @@
             this.header();
             this.homeSlider();
             this.scrollToTop();
+            this.mixitup();
         }
 
         header(){
@@ -75,6 +76,15 @@
                 }
             }
             showHide();
+        }
+        mixitup(){
+            var cont = $('[data-ref="saturn-mixitup"]');
+
+            var filtering = mixitup(cont, {
+                selectors: {
+                    target: '[data-ref="mixitup-target"]'
+                }
+            });
         }
     }
     $(document).ready(function () {
