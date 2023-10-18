@@ -166,7 +166,9 @@ h1,h2,h3,h4,h5,h6{
 .grid{
     display: grid !important;
 }
-
+.radius-50{
+    border-radius: 50% !important;
+}
 // global class
 .saturn-title-box{
     margin-bottom: 30px;

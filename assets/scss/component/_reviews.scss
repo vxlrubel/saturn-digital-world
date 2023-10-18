@@ -1,0 +1,59 @@
+.review-area{
+    .d-flex{
+        gap: 30px;
+        @include media('tablet'){
+            gap: 30px;
+            align-items: center;
+        }
+        .review,
+        .review-type{
+            width: 100%;
+            @include media('tablet'){
+                width: calc(50% - 15px);
+            }
+        }
+        .author-details {
+            gap: 15px;
+            flex-wrap: wrap;
+            .thumb{
+                width: 87px;
+            }
+            .details{
+                width: calc( 100% - 102px);
+                *{
+                    margin: 0;
+                }
+                h2{
+                    font-size: 110%;
+                    font-weight: 600;
+                }
+                h3{
+                    font-size: 95%;
+                    font-weight: 600;
+                }
+                img{
+                    margin-top: 0.75rem;
+                    max-width: 100px;
+                }
+            }
+            .desc{
+                font-style: italic;
+                font-size: 95%;
+            }
+        }
+        .owl-nav{
+            text-align: right !important;
+            button{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 28px !important;
+                width: 28px !important;
+                background-color: var(--saturn-color);
+            }
+            .owl-prev{
+                margin-right: 5px;
+            }
+        }
+    }
+}

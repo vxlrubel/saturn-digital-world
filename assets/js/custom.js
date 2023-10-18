@@ -6,6 +6,7 @@
             this.homeSlider();
             this.scrollToTop();
             this.mixitup();
+            this.reviewSlider();
         }
 
         header(){
@@ -48,7 +49,7 @@
                 animateOut        : 'animate__fadeOutLeft',
                 
             }
-            $(".home-slider").owlCarousel(args);
+            $('.home-slider').owlCarousel(args);
         }
 
         scrollToTop(){
@@ -84,6 +85,24 @@
                 selectors: {
                     target: '[data-ref="mixitup-target"]'
                 }
+            });
+        }
+
+        reviewSlider(){
+            $('.review-area .review').owlCarousel({
+                items             : 1,
+                loop              : true,
+                dots              : false,
+                nav               : true,
+                lazyLoad          : true,
+                autoplay          : true,
+                autoplayTimeout   : 4000,
+                autoplayHoverPause: true,
+                smartSpeed        : 1500,
+                dotsSpeed         : 750,
+                navSpeed          : 750,
+                animateIn         : 'animate__fadeInRight',
+                animateOut        : 'animate__fadeOutLeft',
             });
         }
     }
