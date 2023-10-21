@@ -1,0 +1,66 @@
+.page-title-parent{
+    .title-thumb{
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .page-title{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            h1{
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 200%;
+            }
+        }
+    }
+}
+
+// pagination
+.saturn-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    background-color: var(--saturn--blog-color);
+    ul{
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        li:not(:last-child){
+            margin-right: 5px;
+        }
+        li {
+            > *{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 30px;
+                font-weight: 600;
+                font-size: 90%;
+                border-radius: 4px !important;
+                color: var(--saturn-body-color);
+                background-color: var(--saturn-color);
+
+                &:hover:not(.current){
+                    background-color: var(--saturn-body-color) !important;
+                    color: var(--saturn-color);
+                }
+            }
+            span.current{
+                background-color: #f5422a;
+            }
+        }
+    }
+}

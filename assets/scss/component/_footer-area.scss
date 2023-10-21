@@ -12,6 +12,7 @@
         color: white;
         opacity: 0.6;
         cursor: pointer;
+        z-index: 99999;
         &::after{
             position: absolute;
             height: 10px;
@@ -152,12 +153,13 @@
                             outline: 0;
                             color: var(--saturn-body-color);
                             background-color: var(--saturn-color);
+                            font-weight: 600;
                             &:hover{
                                 background-color: #F5422A;
                             }
                             @include media('laptop'){
                                 width: 90px;
-                                padding: 5px 10px;                                
+                                padding: 5px 10px;    
                             }
                         }
                     }
